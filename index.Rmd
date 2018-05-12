@@ -41,16 +41,17 @@ theme_set(theme_bw())
 ##Background
 
 Several policies were in place in 2014 to ensure the sustainability of marine and fisheries resources for generations to come.
-*Ban on foreign fishing vessels at Indonesian ZEE (moratorium policy)
-*Ban on fishing in tuna breeding & spawning ground 
-*Ban on trade of undersized & berried crustaceans 
-*Ban on using seine net and trawls 
+
+* Ban on foreign fishing vessels at Indonesian ZEE (moratorium policy)
+* Ban on fishing in tuna breeding & spawning ground 
+* Ban on trade of undersized & berried crustaceans 
+* Ban on using seine net and trawls 
 
 ##Objective
 The objective of final project is to answer whether these policies has a bad impact to the export / import (trade).
 
 ##Method 
-*Data processing and cleansing
+* Data processing and cleansing
 1. Download the HSCODE and COUNTRYCODE from the UN Comtrade. Alternatively, using their API.
    HSCODE is Harmonized System (HS), internationally standardized ID to clasify traded      
    product.
@@ -61,11 +62,11 @@ The objective of final project is to answer whether these policies has a bad imp
 5. Cleansing the data
 6. Find the highest value of exported product from Indonesia 
 
-*Time series analysis
+* Time series analysis
 1. Analyse of the trade balance flow between Indonesia and US. Using time series analysis (ts function in R)
 2. Analyse of the bilateral trade between Indonesia and US using the same method above. 
 
-*Market Analysis
+* Market Analysis
 1. Find the most favorite exported product
 2. Dig in to detail of the species. 
 
@@ -83,8 +84,8 @@ fish_trade_6_digit_import <- read.csv("data/uncomtrade_6_hscode_import.csv")
 ###Time Series Analysis : Trade Balance Flow
 
 Trade balance is a difference between the total value of export and total value of imports
-*Trade surplus exists when a country exports more than it (imports: X > M)
-*Trade deficit exists when a country imports more than it (exports: X < M)
+* Trade surplus exists when a country exports more than it (imports: X > M)
+* Trade deficit exists when a country imports more than it (exports: X < M)
 
 ```{r trade_flow}
 # time series trade balance flow data using ts function
@@ -165,3 +166,8 @@ crab <- fish_trade_6_digit_export  %>%
 
 ```
 
+###Poster
+
+```{r echo=FALSE, out.width='100%'}
+knitr::include_graphics('./poster.jpg')
+```
