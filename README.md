@@ -9,16 +9,16 @@
   
 # File
   
-  ##Index.R   : Development
-  ##Index.Rmd : Output 
-  ##Index.HTML: Output
-  ##README.md : How To
-  ##Index.JPG : Poster
+  *Index.R   : Development
+  *Index.Rmd : Output 
+  *Index.HTML: Output
+  *README.md : How To
+  *Index.JPG : Poster
   
 # Data
 
-  ##uncomtrade_4_hscode.csv
-  ##trade_flow.csv
-  ##uncomtrade_6_hscode_export.csv
-  #uncomtrade_6_hscode_import.csv
-  ##trade.csv
+  *uncomtrade_4_hscode.csv
+  *trade_flow.csv
+  *uncomtrade_6_hscode_export.csv
+  *uncomtrade_6_hscode_import.csv
+  *trade.csv
